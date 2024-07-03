@@ -94,7 +94,7 @@ let Index = 0
 let score = 0
 StartQuiz()
 function StartQuiz() {
-    selectAnswers()
+
     const currentQuiz = quizData[Index]
     question.innerText =Index+1+". "+ currentQuiz.question
     a_text.innerText = currentQuiz.a
@@ -102,9 +102,7 @@ function StartQuiz() {
     c_text.innerText = currentQuiz.c
     d_text.innerText = currentQuiz.d
 }
-function selectAnswers() {
-    answerE.forEach(answerEl => answerEl.checked = false)
-}
+
 function getSelected() {
     let answer
     answerE.forEach(answerEl => {
